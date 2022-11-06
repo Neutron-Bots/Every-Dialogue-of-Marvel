@@ -38,7 +38,16 @@ def main():
     except Exception as e:
         logging.error(e)
 
+
+def ping_server_main():
+    asyncio.run(ping_server())
+
 schedule.every(12).hours.do(main)
+
+if Config.REPLIT:
+    from utils import keep_alive
+    asyncio.run(keep_alive())
+    schedule.every(4).minutes.do(ping_server_main)
 
 if __name__ ==  "__main__":
 
@@ -52,13 +61,6 @@ if __name__ ==  "__main__":
     if Config.RUN_ONE_TIME:
         main()
         sys.exit()
-
-    if Config.REPLIT:
-        from utils import keep_alive
-        asyncio.run(keep_alive())
-        asyncio.create_task(ping_server())
-        logging.info("Server Started")
-
     while True:
         schedule.run_pending()
         time.sleep(1)
