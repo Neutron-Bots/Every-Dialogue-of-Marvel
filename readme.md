@@ -24,7 +24,7 @@ Refer this [video](https://www.youtube.com/watch?v=BdmUhQnPToM)
 Clone the project
 
 ```bash
-git clone https://github.com/kevinnadar22/Every-Dialogue-of-Marvel
+git clone https://github.com/Neutron-Bots/Every-Dialogue-of-Marvel
 ```
 
 Go to the project directory
@@ -52,8 +52,8 @@ python3 -m main
 
 | Name              | Deploy        |
 | ----------------- | ------------- | 
-| Replit (Recommended) | [Deploy](https://replit.com/github/kevinnadar22/Every-Dialogue-of-Marvel) |
-| Heroku | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kevinnadar22/Every-Dialogue-of-Marvel)                          |
+| Replit (Recommended) | [Deploy](https://replit.com/github/Neutron-Bots/Every-Dialogue-of-Marvel) |
+| Heroku | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Neutron-Bots/Every-Dialogue-of-Marvel)                          |
 
 
 
