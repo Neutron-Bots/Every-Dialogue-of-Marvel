@@ -37,7 +37,6 @@ def main():
         asyncio.run(post_qoute(client))
     except Exception as e:
         logging.error(e)
-        main()
 
 schedule.every(12).hours.do(main)
 
