@@ -29,6 +29,7 @@ async def post_qoute(tweepy: tweepy.Client):
     url = random.choice(Config.api_url)
     text = await getQoute(url)
     tweepy.create_tweet(text=text)
+    tweepy.create_tweet
 # 
 def main():
     try:
@@ -39,7 +40,6 @@ def main():
 
 schedule.every(12).hours.do(main)
 
-
 if __name__ ==  "__main__":
 
     if not exists("log.txt"):
@@ -48,6 +48,9 @@ if __name__ ==  "__main__":
             f.close()
 
     logging.info("Bot starting...")
+
+    if Config.RUN_ONE_TIME:
+        main()
 
     if Config.REPLIT:
         from utils import keep_alive
