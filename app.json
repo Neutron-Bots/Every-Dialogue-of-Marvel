@@ -1,0 +1,47 @@
+{
+    "name": "Every Dialogue Of Marvel",
+    "description": "This bot tweets dialogue from MCU characters every certain hour.",
+    "stack": "container",
+    "logo": "https://wallpapercave.com/wp/wp4584553.png",
+    "keywords": [
+      "twitter",
+      "marvel"
+    ],
+    "website": "https://github.com/Neutron-Bots/",
+    "repository": "Every-Dialogue-of-Marvel",
+    "env": {
+        "API_KEY": {
+        "value": ""
+        },
+        "API_SECRET": {
+        "value": ""
+        },
+        "BEARER_TOKEN": {
+        "value": ""
+        },
+        "ACCESS_TOKEN": {
+        "value": ""
+
+        },
+        "ACCESS_TOKEN_SECRET": {
+        "value": ""
+        },
+        "SLEEP_TIME": {
+        "description": "Time interval for each tweet in hours",
+        "value": "1",
+        "required": false}
+      },
+    "addons": [],
+    "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    }
+  }
+  
