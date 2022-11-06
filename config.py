@@ -18,4 +18,5 @@ class Config(object):
     REPLIT = f"https://{REPLIT_APP_NAME.lower()}.{REPLIT_USERNAME}.repl.co" if REPLIT_APP_NAME and REPLIT_USERNAME else False
     PING_INTERVAL = int(os.environ.get("PING_INTERVAL", "300"))
     RUN_ONE_TIME = os.environ.get("RUN_ONE_TIME", False)
+    SLEEP_TIME = int(os.environ.get("SLEEP_TIME", "1")) # in hour
     template = "\"{dialogue}\"\n\nBy - #{author}\n\n@marvel #marvel"

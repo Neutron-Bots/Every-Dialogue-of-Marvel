@@ -42,7 +42,7 @@ def main():
 def ping_server_main():
     asyncio.run(ping_server())
 
-schedule.every(12).hours.do(main)
+schedule.every(Config.SLEEP_TIME).hours.do(main)
 
 if Config.REPLIT:
     from utils import keep_alive
