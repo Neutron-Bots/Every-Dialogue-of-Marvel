@@ -1,6 +1,7 @@
 import asyncio
 import logging
 import random
+import sys
 import time
 import tweepy
 from config import Config
@@ -51,6 +52,7 @@ if __name__ ==  "__main__":
 
     if Config.RUN_ONE_TIME:
         main()
+        sys.exit()
 
     if Config.REPLIT:
         from utils import keep_alive
